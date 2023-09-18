@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
+    
+}
+
+body{
+    font-size: 16px;
+    background-color:#2B2922;
+    color: #ffffff;
+    
+}
+
+.navbar{
+    position: relative;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.navbar{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 50px;
+}
+
+.navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.navbar > div{
+    display: inline-block;
+    float: left;
+}
+
+.navbar > div:first-child{
+ width: 20%;
+}
+
+.navbar > div:nth-child(2){
+    width: 67%;
+}
+
+.list{
+    list-style: none;
+    float: right;
+   
+}
+.list li {
+    display: inline-block;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 20px;
+    padding: 10px 0 20px;
+  
+}
+
+.list li:not(:first-child){
+    color: #706E67;
+}
+
+.navbar img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.button-small{
+    padding: 10px 25px;
+    color: #8E7E33;
+    background: none;
+    border: 2px solid #8E7E33;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.hero-heading{
+     display: inline-block;
+     float: left;
+     color: #ffffff;
+     margin-left: 150px;
+     font-size: 78px;
+     width: 42%;
+     margin-top: 50px;
+     line-height: 1.1;
+}
+
+.hero-body{
+    display: inline-block;
+     float: left;
+     color: #ffffff;
+     width: 34%;
+     text-align: left;
+     margin-top: 90px;
+     font-size: 24px;
+     line-height: 1.6;
+     color: #c7c6c4;
+
+}
+
+.bottom{
+    position: relative;
+    height: 1020px;
+    margin-bottom: 120px;
+}
+
+.bottom::before{
+    background: url(./assets/justice.jpg) no-repeat;
+    display: block;
+    position: absolute;
+    content: '';
+    height: 750px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: -320px;
+    background-size: 100%;
+    margin: auto;
+
+}
+
+
+  
+  
+ 
+
+
+
+
+
+ 
+
+
