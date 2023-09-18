@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+  </body>
+</html>
+
+
+
+
+/* navbar */
+
+.navbar-container{
+  display: block;
+  width: 1000px;
+  padding: 0 45px;
+  margin: auto;
+}
+
+/* display: block;: This property sets the display behavior of the element to "block." This means that the element will take up the full width of its parent container and start on a new line, pushing other elements below it.
+
+padding: 0 45px;: This property sets the padding for the container. It has 0 pixels of padding at the top and bottom and 45 pixels of padding on the left and right sides. This creates space between the
+content of the container and its edges.
+*/
+
+
+.navbar-container::after {
+  display :table ;
+  content :' ';
+  clear: both;
+}
+
+.navbar-container >div {
+  display: inline-block;
+  float: left;
+}
+
+.navbar-container > div:first-child{
+  width: 15%;
+}
+
+
+.navbar-container > div:nth-child(2){
+  width: 65%;
+  margin-top: 10px;
+}
+
+.navbar-container > div:nth-last-child {
+  width: 20%;
+}
+
+.navbar-container img {
+  width: 100px;
+  margin-top: 10px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li :not(:first-child){
+  display: inline-block;
+
+}
+
+.list li:not(:first-child){
+  color: #cbcbcb;
+}
+
+.list li:not(:last-child){
+  margin-right: 25px;
+}

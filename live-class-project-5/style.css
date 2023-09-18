@@ -1,0 +1,140 @@
+/* 12:14  */
+/* 12:53am */
+/* basic overlay reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' sans-serif;
+}
+body {
+  font-size: 16px;
+  color:#FFFFFF ;
+}
+
+/* navbar background its black  */
+
+section[aria-label='navbar'
+]{
+  display: block;
+  background-color: #000000;
+  background-position: 100%;
+  padding: 45px 0;
+}
+
+.navbar {
+  max-width: 80%;
+  margin: auto;
+}
+
+.navbar::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.navbar > div{
+  display: inline-block;
+  float: left;
+  position: relative;
+
+}
+
+.navbar > div:first-child{
+  width: 12%;
+}
+
+.navbar > div.line{
+ background-color: #FFFFFF;
+  width: 1px;
+  height: 40px;
+}
+
+.grow-list+div{
+  float: right;
+} 
+
+.navbar > div:nth-child(3){
+   width: 60%;
+   margin-top: 10px;
+}
+
+.navbar img {
+  width: 90px;
+  margin-top: 10px;
+}
+
+.list{
+  list-style: none;
+  padding: 0;
+}
+
+.list li{
+  display: inline-block;
+  
+  margin-left: 40px;
+}
+
+.list .list-item:first-child{
+  position: relative;
+  padding-right: 25px;
+}
+.list .list-item:first-child::after{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  right: 0;
+  top: 10px;
+  background: url('./assets/down-arrow.png') no-repeat; 
+}
+.button-small{
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #ba0cc5;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+}
+
+/* hero section */
+
+
+section[aria-label='hero']{
+  width: 100%;
+  background: url(./assets/bg.png)no-repeat;
+  background-position: 100%;
+  padding: 300px 0;
+  text-align: center;
+}
+
+.hero{
+ max-width:50%;
+ margin: auto;
+  
+}
+.hero-heading{
+  font-size: 67px;
+  line-height: 1.2;
+
+  font-family: 'Montserrat';
+}
+
+.hero-description
+{
+  margin-bottom: 25px;
+  font-size: 20px;
+
+}
+
+.button-large {
+  padding: 15px 16px;
+  border: 0;
+  border-radius: 9px;
+  background-color:#ba0cc5 ;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+}

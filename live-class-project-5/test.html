@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+  </body>
+</html>
+
+
+
+.navbar::after  {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+.navbar > div {
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.navbar > div:first-child{
+  width: 12%;
+}
+.navbar > div.line{
+  width: 1px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+.grow-list + div {
+  float: right;
+}
+
+.navbar > div:nth-child(3){
+  width: 60%;
+  margin-top: 10px;
+}
+
+
+
+.navbar img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0; 
+}
+
+.list li {
+  display: inline-block;
+  margin-left: 40px;
+
+}
+
+.list .list-item:first-child{
+  position: relative;
+  padding-right: 25px;
+}
+.list .list-item:first-child::after{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  right: 0;
+  top: 10px;
+  background: url('./assets/down-arrow.png') no-repeat; 
+}
+.button-small {
+  padding: 6px 20px;
+  border-radius: 8px;
+  background-color: #ba0cc5;
+  color: #ffffff;
+  font-size: 14px;
+}

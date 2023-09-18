@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron' sans-serif;
+}
+
+body {
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Orbitron' sans-serif;
+}
+
+.navbar-container{
+  display: block;
+  max-width: 1175px;
+  width: 100%;
+  padding: 40px 0;
+  margin: auto;
+}
+
+.navbar-container::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.navbar-container div:first-child,
+.navbar-container div:nth-child(2),
+.navbar-container div:last-child{
+  display: inline-block;
+  float: left;
+}
+
+.navbar-container > div:first-child{
+  width: 20%;
+}
+
+.navbar-container > div:nth-child(2) {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.navbar-container > div:last-child{
+width: 20%;
+}
+
+.navbar-container img {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 10px 0 0;;
+}
+
+.list li {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.list li:first-child{
+  position: relative;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.list li:first-child::after{
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.list li:not(:last-child){
+  margin-right: 25px;
+}
+
+
+.search-icon svg{
+width: 20px; 
+
+
+}
+
+.nav-button {
+  padding: 5px 30px;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: 'Poppins' sans-serif;
+  background: transparent;
+  margin: auto;
+  margin-left: 15px;
+
+}
+
+
+.hero-container{
+ 
+  position: relative;
+  margin: auto;
+  max-width: 1175px;
+  padding: 30px 0;
+}
+
+.square img {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  left: 180px;
+  top: 190px;
+}
+
+.globe + div {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left:50px;
+  top:25px;
+}
+
+.globe + div img {
+  width: 325px;
+}
+
+.star img {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  right: 80px;
+  top :0;
+}
+
+.star-small img {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  left :42%;
+  bottom: -100px;
+  
+}
+
+.globe img {
+  position: absolute;
+  content: '';
+  width:50px ;
+  height: 50px;
+  left:52%;
+  top:0;
+}
+
+
+.hero-container-right{
+  position: absolute;
+  content: '';
+  top : 105px ;
+  display: block;
+  right: 0;
+  width: 700px;
+  text-align: center;
+}
+
+.hero-heading{
+  font-size: 45px;
+  font-weight: 700;
+  
+}
+.hero-description{
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px auto 70px;
+}
+
+.button-email,
+.button-join {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Orbitron' sans-serif;
+  border-radius: 10px;
+}
+
+.button-email{
+  background: none;
+  margin-right: 10px;
+}
+.button-join{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.contact-heading{
+  font-size: 18px;
+  margin: 70px auto 20px;
+  font-weight: 500;
+  font-family: 'Poppins' sans-serif;
+
+}
+
+.icons img {
+  margin-right: 25px;
+}
